@@ -2,25 +2,29 @@
   width: 100px;
   height: 100px;
   background: #000;
-  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  left: 50%;
 }
 
 .box:nth-child(1) {
   background-color: rgba(255, 95, 71, 0.674);
-  position: relative;
-  right: 50px;
+  position: absolute;
 }
 
 .box:nth-child(2) {
   background-color: lightblue;
-  position: relative;
-  bottom: 50px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
   z-index: 1;
 }
 
 .box:nth-child(3) {
   background-color: rgb(144, 238, 186);
-  position: relative;
-  bottom: 100px;
-  left: 50px;
+  top: 100px;
+  left: 100px;
+  position: absolute;
 }
